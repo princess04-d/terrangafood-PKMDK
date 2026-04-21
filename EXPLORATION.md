@@ -15,15 +15,28 @@
 
 ---
 
-## 🌐 Architecture Frontend (par DF -- [Prénom])
+🌐 Architecture Frontend (par DF -- Khadim Gueye)
 
-- **Nombre de pages :** ...
-- **Composants réutilisables :**
-  - Header
-  - RestaurantCard
-  - PlatCard
-- **Méthode d’appel API :** fetch dans `lib/api.js`
+Nombre de pages : 3
 
+/ — Accueil (présentation de TerrangaFood)
+/restaurants — Liste des restaurants
+/restaurants/[id] — Détail d'un restaurant et ses plats
+
+
+Composants réutilisables :
+
+Header — barre de navigation commune à toutes les pages
+RestaurantCard — carte affichant les infos d'un restaurant (nom, cuisine, note, horaires)
+PlatCard — carte affichant un plat (nom, description, prix, catégorie)
+
+
+Méthode d'appel API : fetch centralisé dans lib/api.js via la variable NEXT_PUBLIC_API_URL
+Observations :
+
+Lors de l'exploration, GET /api/restaurants retournait [] car le seed n'avait pas encore été exécuté
+La variable NEXT_PUBLIC_API_URL dans le .env permet de basculer facilement entre environnement local et production
+Les composants RestaurantCard et PlatCard sont découplés et réutilisables sur plusieurs pages
 ---
 
 ## ⚙️ Configuration (par DO -- [Prénom])
