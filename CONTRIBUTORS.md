@@ -2,6 +2,5 @@
 
 ## Équipe : Team PKDMK
 
-| Membre | Rôle Lab 0 | GitHub |
-|E       |    QA      |marie471|
-|  | | |
+| Membre   | Rôle Lab 0 | GitHub |
+|Marie kebe|    QA      |marie471|
