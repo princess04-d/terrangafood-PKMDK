@@ -35,7 +35,7 @@ cp .env.example .env
 cd api
 npm install
 
-# Installer les dépendances Frontend
+# installer les composants
 cd ../web
 npm install
 ```
