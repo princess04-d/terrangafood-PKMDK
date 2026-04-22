@@ -85,3 +85,16 @@ terrangafood/
 ## Licence
 
 Projet pédagogique — Usage académique uniquement.
+## Fonctionnalités existantes
+
+- Inscription et authentification des utilisateurs
+- Consultation des restaurants disponibles
+- Affichage des plats par restaurant
+- Commande de plats en ligne
+- Initialisation des données avec `npm run seed`
+
+## DevOps
+
+- Variables d’environnement gérées via `.env`
+- Scripts de lancement (`npm run dev`) pour API et Frontend
+- Fichiers ignorés (`.gitignore`) pour éviter de pousser des secrets
