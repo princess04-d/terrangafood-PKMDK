@@ -25,6 +25,19 @@
 • Modèles (models/) : Définissent la structure des données avec Mongoose.
 • Contrôleurs (controllers/) : Contiennent la logique métier (ex: tri des restaurants par note, population des données). Ils utilisent des fonctions asynchrones (async/await) et gèrent les erreurs via un bloc try/catch.
 • Routes (routes/) : Font le lien entre les URLs et les fonctions des contrôleurs.
+=======
+---
+HEAD
+## 🌐 Architecture Frontend (par DF -- [Prénom])
+
+- **Nombre de pages :** ...
+- **Composants réutilisables :**
+  - Header
+  - RestaurantCard
+  - PlatCard
+- **Méthode d’appel API :** fetch dans `lib/api.js`
+
+
 
 🌐 Architecture Frontend (par DF -- Khadim Gueye)
 
@@ -48,6 +61,7 @@ Observations :
 Lors de l'exploration, GET /api/restaurants retournait [] car le seed n'avait pas encore été exécuté
 La variable NEXT_PUBLIC_API_URL dans le .env permet de basculer facilement entre environnement local et production
 Les composants RestaurantCard et PlatCard sont découplés et réutilisables sur plusieurs pages
+aef41f690abac634128d5c27a073081f09b9db3d
 ---
 
 ## ⚙️ Configuration (par DO -- [Prénom])
@@ -66,13 +80,32 @@ Les composants RestaurantCard et PlatCard sont découplés et réutilisables sur
 
 ---
 
+HEAD
 ## 🧪 Tests fonctionnels (par QA -- [Prénom])
 
 - **Fonctionnalités testées :**
   - [liste des fonctionnalités testées]
 - **Bugs trouvés :**
   - [aucun / liste des bugs]
+## 🧪 Tests fonctionnels (par QA -- Marie kebe)
 
+
+## 🧪 Tests QA (par Marie Kebe)
+
+- L’application démarre correctement (API + Frontend).
+- Les restaurants s’affichent sur la page d’accueil.
+- La navigation vers les détails d’un restaurant fonctionne.
+- Les plats associés à chaque restaurant sont visibles.
+- Les routes API répondent correctement :
+  - GET /api/restaurants
+  - GET /api/restaurants/:id
+
+## 🐞 Bugs observés
+
+- Aucun bug critique détecté.
+- Légère lenteur au premier chargement de l’API.
+- Certaines images peuvent ne pas s’afficher selon les données.
+>>>>>>> aef41f690abac634128d5c27a073081f09b9db3d
 ---
 
 ## 📊 Synthèse (par CP -- [Princesse DIMENI])
@@ -84,4 +117,39 @@ Les composants RestaurantCard et PlatCard sont découplés et réutilisables sur
   - La configuration du projet (variables d’environnement et scripts npm) est opérationnelle.
   - Le projet peut être lancé et testé sans blocage majeur.
 - **Ce qui manque (les 30%) :**
+ HEAD
   - - La gestion des conflits (merge conflicts Git) n’est pas encore totalement maîtrisée et intégrée dans le workflow de l’équipe.
+ ## ⚙️ Configuration (par DO -- Khadim)
+
+- **Variables d’environnement :**
+  - MONGODB_URI : URI de connexion à MongoDB
+  - PORT : port du serveur backend
+  - SECRET_KEY : clé secrète pour la sécurité
+
+- **Scripts npm :**
+  - dev : lance le serveur en mode développement
+  - start : lance le serveur en production
+  - seed : insère des données de test dans la base
+
+- **Fichiers ignorés par Git :**
+  - node_modules/ : dépendances recréées automatiquement
+  - .env : contient des secrets
+  - .next/ : fichiers générés par le build fronten
+  - - La gestion des conflits (merge conflicts Git) n’est pas encore totalement maîtrisée et intégrée dans le workflow de l’équipe.
+aef41f690abac634128d5c27a073081f09b9db3d
+## ⚙️ Configuration (par DO -- Khadija)
+
+- **Variables d’environnement :**
+  - MONGODB_URI : URI de connexion à MongoDB
+  - PORT : port du serveur backend
+  - SECRET_KEY : clé secrète pour la sécurité
+
+- **Scripts npm :**
+  - dev : lance le serveur en mode développement
+  - start : lance le serveur en production
+  - seed : insère des données de test dans la base
+
+- **Fichiers ignorés par Git :**
+  - node_modules/ : dépendances recréées automatiquement
+  - .env : contient des secrets
+  - .next/ : fichiers générés par le build frontend
