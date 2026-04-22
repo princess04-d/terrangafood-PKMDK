@@ -89,9 +89,6 @@ HEAD
   - [aucun / liste des bugs]
 ## 🧪 Tests fonctionnels (par QA -- Marie kebe)
 
-
-## 🧪 Tests QA (par Marie Kebe)
-
 - L’application démarre correctement (API + Frontend).
 - Les restaurants s’affichent sur la page d’accueil.
 - La navigation vers les détails d’un restaurant fonctionne.
