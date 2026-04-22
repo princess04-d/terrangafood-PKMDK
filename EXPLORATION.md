@@ -61,7 +61,7 @@
   - Le projet peut être lancé et testé sans blocage majeur.
 - **Ce qui manque (les 30%) :**
   - - La gestion des conflits (merge conflicts Git) n’est pas encore totalement maîtrisée et intégrée dans le workflow de l’équipe.
-  ## ⚙️ Configuration (par DO -- Khadija)
+ ## ⚙️ Configuration (par DO -- Khadim)
 
 - **Variables d’environnement :**
   - MONGODB_URI : URI de connexion à MongoDB
