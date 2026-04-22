@@ -4,16 +4,27 @@
 
 ---
 
-##  Architecture Backend (par DB -- [Prénom])
+##  Architecture Backend (par DB -- [Mame diarra ndiaye])
 
-- **Nombre de modèles :** ...
+- **Nombre de modèles :** 2
 - **Endpoints existants :**
-  - GET `/api/restaurants`
-  - GET `/api/restaurants/:id`
-  - ...
+-  GET `/api/restaurants` 
+-  GET `/api/restaurants/:id` 
+-  POST `/api/restaurants`
+-  PUT `/api/restaurants/:id` 
+-  DELETE `/api/restaurants/:id` 
+-  GET `/api/plats` 
+-  GET `/api/plats/restaurant/:restaurantId` 
+-  GET `/api/plats/:id`
+-  POST `/api/plats`
+-  PUT `/api/plats/:id` 
+-  DELETE `/api/plats/:id`
+  
 - **Pattern utilisé :** MVC (Model – View – Controller)
 
----
+• Modèles (models/) : Définissent la structure des données avec Mongoose.
+• Contrôleurs (controllers/) : Contiennent la logique métier (ex: tri des restaurants par note, population des données). Ils utilisent des fonctions asynchrones (async/await) et gèrent les erreurs via un bloc try/catch.
+• Routes (routes/) : Font le lien entre les URLs et les fonctions des contrôleurs.
 
 🌐 Architecture Frontend (par DF -- Khadim Gueye)
 
