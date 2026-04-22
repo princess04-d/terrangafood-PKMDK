@@ -123,7 +123,7 @@ HEAD
   - .next/ : fichiers générés par le build fronten
   - - La gestion des conflits (merge conflicts Git) n’est pas encore totalement maîtrisée et intégrée dans le workflow de l’équipe.
 aef41f690abac634128d5c27a073081f09b9db3d
-## ⚙️ Configuration (par DO -- Khadim)
+## ⚙️ Configuration (par DO -- Khadija)
 
 - **Variables d’environnement :**
   - MONGODB_URI : URI de connexion à MongoDB
