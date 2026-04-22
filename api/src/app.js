@@ -54,5 +54,5 @@ mongoose
     console.error('❌ Erreur de connexion à MongoDB :', err.message);
     process.exit(1);
   });
-
+  //ok
 module.exports = app;
