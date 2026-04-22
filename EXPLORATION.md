@@ -55,13 +55,24 @@ Les composants RestaurantCard et PlatCard sont découplés et réutilisables sur
 
 ---
 
-## 🧪 Tests fonctionnels (par QA -- [Prénom])
+## 🧪 Tests fonctionnels (par QA -- Marie kebe)
 
-- **Fonctionnalités testées :**
-  - [liste des fonctionnalités testées]
-- **Bugs trouvés :**
-  - [aucun / liste des bugs]
 
+## 🧪 Tests QA (par Marie Kebe)
+
+- L’application démarre correctement (API + Frontend).
+- Les restaurants s’affichent sur la page d’accueil.
+- La navigation vers les détails d’un restaurant fonctionne.
+- Les plats associés à chaque restaurant sont visibles.
+- Les routes API répondent correctement :
+  - GET /api/restaurants
+  - GET /api/restaurants/:id
+
+## 🐞 Bugs observés
+
+- Aucun bug critique détecté.
+- Légère lenteur au premier chargement de l’API.
+- Certaines images peuvent ne pas s’afficher selon les données.
 ---
 
 ## 📊 Synthèse (par CP -- [Princesse DIMENI])
